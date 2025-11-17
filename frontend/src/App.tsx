@@ -44,7 +44,7 @@ function App() {
         },
       };
 
-      const response = await fetch("http://localhost:8000/compare", {
+      const response = await fetch("https://casefilemirabackend.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ property1, property2 }),
